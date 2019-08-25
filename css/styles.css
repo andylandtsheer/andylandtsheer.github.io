@@ -1,27 +1,29 @@
 header {
   grid-area: header;
   border-radius: 25px;
-  background-color: yellow;
+  background-color: #AAA;
 }
 
 article {
   grid-area: article;
-  background-color: blue;
   min-height: 60vh;
   border-radius: 25px;
   overflow: hidden;
+  background-color: white;
 }
 
 nav {
   grid-area: nav;
   border-radius: 25px;
-  background-color: red;
+  font-size: 15px;
+  background-color: #AAA;
 }
 
 footer {
   grid-area: footer;
   border-radius: 25px;
-  background-color: green;
+  background-color: #333;
+  color : #AAA;
 }
 
 body {
@@ -33,7 +35,7 @@ body {
       'footer';
   grid-gap: 10px;
   text-align: center;
-  background-image: linear-gradient(black, #171717, black, black);
+  background-image: linear-gradient(black, #111, black, black);
 }
 
 a{
@@ -41,12 +43,12 @@ a{
   text-decoration: none;
 }
 
-ul{
-
+nav ul{
+  padding-inline-start: 0px;
   list-style-type: none;
 }
 
-li{
+nav li{
   display:inline;
   width: 150 px;
   margin: 5px  auto 5px 20px;
@@ -54,6 +56,40 @@ li{
   border-width: 1px;
   text-align: left;
   padding-left: 10px;
+}
+
+div.justme{
+  float: left;
+  width: 49%;
+}
+
+li.justme{
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+span.justme{
+  font-weight: bold;
+}
+
+img.justme{
+  float: right;
+  width: 45%;
+  margin-right: 5%;
+}
+
+p.cycling {
+  float: left;
+  width: 60%;
+}
+
+img.cycling {
+  float: right;
+  width: 33%;
+}
+
+p.clear {
+  clear: both;
 }
 
 @media only screen and (min-width: 900px) {
@@ -71,9 +107,13 @@ li{
     height: 80vh;
   }
 
-  li{
+  nav{
+    font-size: 25px;
+  }
+  nav li{
     display:grid;
     border-bottom: solid;
     border-bottom-width: 1px;
+    margin-top: 25px;
   }
 }
