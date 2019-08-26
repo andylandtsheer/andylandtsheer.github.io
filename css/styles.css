@@ -43,6 +43,10 @@ a{
   text-decoration: none;
 }
 
+h2{
+    margin-left: 5%;
+}
+
 nav ul{
   padding-inline-start: 0px;
   list-style-type: none;
@@ -77,19 +81,30 @@ img.justme{
   width: 45%;
   margin-right: 5%;
 }
+.cycling {
+  text-align: left;
+}
 
 p.cycling {
   float: left;
   width: 60%;
+  margin-left: 5%;
 }
 
 img.cycling {
   float: right;
-  width: 33%;
+  width: 30%;
+  margin-right: 5%;
 }
 
-p.clear {
+ul.cycling {
   clear: both;
+  display: block;
+}
+
+ul li.cycling {
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 @media only screen and (min-width: 900px) {
